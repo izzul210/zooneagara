@@ -8,16 +8,18 @@ import {
 
 function Homepage() {
     return (
-        <Container className="homePage">
-            <Row className="header">
+        <div className="homePage">
+            <div className="header">
                 <div className="blur">
-                    <div className="header_desc">
-                        <h1>Experience National Zoo Wildlife</h1>
-                        <span>National Zoo houses more than 300 species and 
-                            50 endangered species from reptiles to insects</span>
-                    </div>
+                    <Container>
+                        <div className="header_desc">
+                            <h1>Experience National Zoo Wildlife</h1>
+                            <span>National Zoo houses more than 300 species and 
+                                50 endangered species from reptiles to insects</span>
+                        </div>
+                    </Container>
                 </div>
-            </Row>
+            </div>
             <div className="ticketDiv">
                <div className="ticketCard">
                    <div className="img">
@@ -61,7 +63,7 @@ function Homepage() {
                     
                 </div>
             </div>
-        </Container>
+        </div>
     )
 }
 
