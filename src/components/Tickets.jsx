@@ -4,6 +4,9 @@ import {Container, Row, Col} from 'react-bootstrap';
 
 import dayPass from '../assets/dayPass.jpg';
 import groupPass from '../assets/groupPass.jpg';
+import {
+    Link
+  } from "react-router-dom";
 
 
 function Tickets() {
@@ -43,7 +46,10 @@ function Tickets() {
                         </div>
                     </div>
                     <div className="button">
-                        <button>Buy Day Pass</button>
+                        <Link to="/tickets/daypass">
+                            <button>Buy Day Pass</button>
+                        </Link>
+                        
                     </div>
 
                 </div>

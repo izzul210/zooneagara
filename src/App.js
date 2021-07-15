@@ -9,16 +9,23 @@ import {
 import Homepage from './components/Homepage';
 import Tickets from './components/Tickets';
 import Footer from './components/Footer';
+import BuyDayPass from './components/Pages/BuyDayPass';
+import ScrollToTop from './ScrollToTop';
+
 
 function App() {
   return (
     <div className="template">
       <div>
       <Router >
+        <ScrollToTop/>
         <Navbar />
         <Switch>
-        <Route path="/tickets">
+        <Route exact path="/tickets">
               <Tickets />
+          </Route>
+          <Route exact path="/tickets/daypass">
+              <BuyDayPass />
           </Route>
           <Route path="/">
               <Homepage />
