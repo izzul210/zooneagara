@@ -4,6 +4,9 @@ import {Container} from 'react-bootstrap';
 import {FiPlusSquare} from 'react-icons/fi';
 import {FiMinusSquare} from 'react-icons/fi';
 import dayPass from '../../assets/dayPass.jpg';
+import {
+    Link
+  } from "react-router-dom";
 
 function BuyDayPass() {
     const [adult, setAdult] = useState(0);
@@ -27,7 +30,7 @@ function BuyDayPass() {
                                 <button onClick={() => setAdult(adult + 1)}>
                                     <FiPlusSquare size={30}/>
                                 </button>
-                                <h4>{adult}</h4>
+                                <span>{adult}</span>
                                 <button onClick={() => (adult !== 0)&&setAdult(adult - 1)}>
                                     <FiMinusSquare size={30}/>
                                 </button>
@@ -42,7 +45,7 @@ function BuyDayPass() {
                                 <button onClick={() => setChild(child + 1)}>
                                     <FiPlusSquare size={30}/>
                                 </button>
-                                <h4>{child}</h4>
+                                <span>{child}</span>
                                 <button onClick={() => (child !== 0)&&setChild(child - 1)}>
                                     <FiMinusSquare size={30}/>
                                 </button>
@@ -57,7 +60,7 @@ function BuyDayPass() {
                                 <button onClick={() => setSenior(senior + 1)}>
                                     <FiPlusSquare size={30}/>
                                 </button>
-                                <h4>{senior}</h4>
+                                <span>{senior}</span>
                                 <button onClick={() => (senior !== 0)&&setSenior(senior - 1)}>
                                     <FiMinusSquare size={30}/>
                                 </button>
@@ -72,7 +75,7 @@ function BuyDayPass() {
                                 <button onClick={() => setStudent(student + 1)}>
                                     <FiPlusSquare size={30}/>
                                 </button>
-                                <h4>{student}</h4>
+                                <span>{student}</span>
                                 <button onClick={() => (student !== 0)&&setStudent(student - 1)}>
                                     <FiMinusSquare size={30}/>
                                 </button>
@@ -80,7 +83,9 @@ function BuyDayPass() {
                         </div>
                         <div className="buttons">
                             <button className="add">Add to cart</button>
-                            <button className="checkout">Checkout</button>
+                            <Link to="/tickets/review">
+                                 <button className="checkout">Checkout</button>
+                            </Link>
                         </div>
                     </div>
                     <div className="image">

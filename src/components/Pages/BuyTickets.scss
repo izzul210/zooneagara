@@ -1,8 +1,7 @@
 .buyDayPass{
-    padding: 5rem 1rem;
-
+    padding: 5rem 0rem;
     @media screen and (max-width: 640px){
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
     }
     
 }
@@ -38,6 +37,10 @@
                 flex-direction: row;
                 justify-content: space-between;
                 width: 170px;
+
+                h6{
+                    font-weight: 700;
+                }
             }
 
             .choose{
@@ -63,8 +66,9 @@
                     }
                 }
 
-                h4{
+                span{
                     padding: 0.2rem;
+                    font-weight: 700;
                 }
             }
         }
@@ -95,7 +99,7 @@
 
             .checkout{
                 background: rgb(246, 246, 178);
-            }
+             }
         }
 
     }

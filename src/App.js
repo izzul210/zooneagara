@@ -10,6 +10,7 @@ import Homepage from './components/Homepage';
 import Tickets from './components/Tickets';
 import Footer from './components/Footer';
 import BuyDayPass from './components/Pages/BuyDayPass';
+import ReviewOrder from './components/Pages/ReviewOrder';
 import ScrollToTop from './ScrollToTop';
 
 
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path="/tickets/daypass">
               <BuyDayPass />
+          </Route>
+          <Route exact path="/tickets/review">
+              <ReviewOrder />
           </Route>
           <Route path="/">
               <Homepage />
