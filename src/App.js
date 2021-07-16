@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import BuyDayPass from './components/Pages/BuyDayPass';
 import ReviewOrder from './components/Pages/ReviewOrder';
 import ScrollToTop from './ScrollToTop';
+import ContactDetail from './components/Pages/ContactDetail';
 
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route exact path="/tickets/review">
               <ReviewOrder />
+          </Route>
+          <Route exact path="/tickets/contactdetail">
+              <ContactDetail />
           </Route>
           <Route path="/">
               <Homepage />

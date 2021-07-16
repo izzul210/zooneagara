@@ -2,6 +2,9 @@ import React from 'react';
 import './ReviewOrder.scss';
 import {Container} from 'react-bootstrap';
 import dayPass from '../../assets/dayPass.jpg';
+import {
+    Link
+  } from "react-router-dom";
 
 function ReviewOrder() {
     return (
@@ -33,7 +36,9 @@ function ReviewOrder() {
                         </div>
                     </div>
                     <div className="button">
-                        <button>Next</button>
+                        <Link to="/tickets/contactdetail">
+                            <button>Next</button>
+                        </Link>
                     </div>
                 </div>
             </Container>
